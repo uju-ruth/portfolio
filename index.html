@@ -12,20 +12,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
-<body class="body1">
 
+<body class="body1">
+    
     <!-- Navbar -->
     <section>
-        <div class="Navbar_container">
+        <div class="Navbar_container" id="nav">
             <h1>Uju Portfolio</h1>
-            <div class="links">
+            <div class="links" id="navLinks">
+                <div class="burger" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark" id="cancel"></i> 
+                </div>
                 <a href="Home">Home</a>
                 <a href="About_me">About me</a>
                 <a href="Portfolio">Portfolio</a>
                 <a href="Reviews">Reviews</a>
                 <a href="FAQ">FAQ</a>
                 <a href="Contact">Contact</a>
-                <div class="nav_btn">
+                <div class="nav_btn" id="contacts">
                     <p>Contact</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
@@ -73,7 +78,7 @@
                         <div class="details_inner">
                             <p class="inner_p">HEY!<span class="inner_span">I'm Uju, <br> Full Stack Web Developer
                                 </span> designer</p>
-                            <h4>Agency-quality Webflow websites with the personal touch of a freelancer.</h4>
+                            <h4>Building dynamic apps, managing databases, handling servers, and optimizing user experience.</h4>
 
                             <div class="first_link">
                                 <div class="cir">
@@ -143,21 +148,19 @@
                             <p class="specialize_titl">I specialize in</p>
                             <div class="specialize_div1">
                                 <p class="spec-num">1</p>
-                                <h1>Webflow</h1>
-                                <p class="specialize_words">I also use Client First system for class naming structures,
-                                    which allows me to build any
-                                    project fast and conveniently.</p>
+                                <h1>React</h1>
+                                <p class="specialize_words">I specialize in building dynamic, responsive React applications with expertise.</p>
                             </div>
                             <div class="specialize_div2">
                                 <p class="spec-num">2</p>
-                                <h1>FinSweet</h1>
+                                <h1>Django</h1>
                                 <p class="specialize_words">Yes, I absolutely love solutions provided FinSweetteam, and
                                     I use them in every single
                                     project.</p>
                             </div>
                             <div class="specialize_div3">
                                 <p class="spec-num">3</p>
-                                <h1>Client-First</h1>
+                                <h1>Python</h1>
                                 <p class="specialize_words">I also use Client First system for class naming structure,
                                     which allows me to build any
                                     project fast and conveniently.</p>
@@ -434,4 +437,6 @@
             </div>
         </div>
     </section>
+    <script src="./index.js"></script>
+
 </body>
